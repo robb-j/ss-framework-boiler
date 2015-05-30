@@ -1,0 +1,20 @@
+@import "config";
+@import "bootstrap/bootstrap";
+@import "bootstrap/bootstrap-theme";
+@import "bootstrap/flat-ui-pro";
+
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	// http://html5please.com/#box-sizing
+	@include box-sizing(border-box);
+}
+
+html body {
+	// font-size has to be set to the body for the rem mixins to be accurate
+	font-size: $font-size;
+	line-height: 1.4;
+	color: $text-color;
+	font-family: $font-family;
+}
