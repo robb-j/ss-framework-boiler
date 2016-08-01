@@ -17,7 +17,7 @@ You can find Silverstripe's great [documentation here](http://docs.silverstripe.
 3. `git remote add boilerplate git@github.com:robb-j/ss-framework-boiler.git`
 4. `git pull boilerplate master`
 5. `composer update`
-6. `cp _ss_environment_Dev.php _ss_environment.php`
+6. `cp _ss_environment_DEV.php _ss_environment.php`
 7. Visit `localhost/SITENAME/public_html/dev/build`
 8. Remove the boilerplate `git rm boilerplate`
 
@@ -25,8 +25,7 @@ You can find Silverstripe's great [documentation here](http://docs.silverstripe.
 ### Live Server Setup
 1. SSH to your server
 2. Add a remote to your project `git remote add origin git@github.com:USERNAME/REPO`
-3. Delete `public_html/_ss_environment.php`
-4. Rename `public_html/_ss_environment_Live.php` to `public_html/_ss_environment.php`
+3. `cp _ss_environment_LIVE.php _ss_environment.php`
 4. Fill in your mysql database details in `_ss_environment.php`
 5. Visit `http://SITENAME.com/dev/build`
 6. Make sure you create and chmod these folders `public_html/silverstripe-cache/session`
