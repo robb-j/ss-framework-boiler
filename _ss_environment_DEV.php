@@ -22,5 +22,3 @@ if (defined('SS_ENVIRONMENT_TYPE') && SS_ENVIRONMENT_TYPE != 'live') {
     // NOTE: no need for setting error_reporting, this is done by SilverStripe
     ini_set('display_errors', 1);
 }
-
-// lots of changes();
